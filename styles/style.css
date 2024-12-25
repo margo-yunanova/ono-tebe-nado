@@ -194,6 +194,69 @@
 
 .lots__look-more-link {
   font-size: 20px;
+.about {
+  margin: 146px auto 180px;
+  padding: 35px 25px 0px;
+  display: flex;
+  gap: 25px;
+}
+
+.about__column:first-child {
+  width: calc(100% / 3 - 2 * 25px);
+  display: flex;
+  justify-content: center;
+}
+
+.about__column:last-child {
+  width: calc(100% / 3 * 2 - 2 * 25px);
+}
+
+.about__logo {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.about__title {
+  height: 240px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-weight: 400px;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: calc(20px * 0.01);
+}
+
+.about__text_normal {
+  letter-spacing: normal;
+}
+
+.about__text_wide {
+  letter-spacing: calc(20px * 0.02);
+}
+
+.about__text_narrow {
+  letter-spacing: calc(20px * -0.01);
+}
+
+.about__text_wider {
+  letter-spacing: calc(20px * 0.03);
+}
+
+.about__text_widest {
+  letter-spacing: calc(20px * 0.04);
 }
 
 .footer {
