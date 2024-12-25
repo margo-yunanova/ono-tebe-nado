@@ -9,7 +9,7 @@ on:
 
 jobs:
   tests:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Set up GitHub Actions
         uses: actions/checkout@v3
@@ -28,6 +28,6 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: layout-compare
-          path: tests-selfmade-project-2-v2-public/layout-canonical.jpg
+          path: tests-selfmade-project-2-v2-public/output.jpg
       - name: Show test results
         run: bash tests-selfmade-project-2-v2-public/result.sh
