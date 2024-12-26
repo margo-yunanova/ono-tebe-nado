@@ -325,13 +325,23 @@
 
 .footer {
   display: flex;
-  margin: 0 auto;
-  max-width: 1340px;
-  justify-content: space-between; /*TODO не по центру*/
-  padding-top: 180px;
+  gap: 185px;
+  margin: 180px auto 0;
+  padding: 0 50px;
 }
 
 .footer__address {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.3px;
+  letter-spacing: calc(18px * 0.01);
+
+  & > a:nth-of-type(3) {
+    text-decoration: none;
+    letter-spacing: 0;
+  }
 }
 
 .footer__menu {
@@ -346,19 +356,25 @@
   list-style: none;
 }
 
-.footer__links-list-item {
-}
-
-.footer__link {
-}
-
 .footer__social-list {
   display: flex;
   gap: 48px;
   list-style: none;
+  flex-grow: 1;
 }
 
-.footer__social-list.footer__social-link:first-child {
+.footer__social-list-item {
+  width: 48px;
+  height: 48px;
+}
+
+.footer__social-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.footer__social-link:first-child {
   background-image: url(../images/yt.svg);
 }
 
