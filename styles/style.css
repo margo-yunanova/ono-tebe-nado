@@ -252,17 +252,19 @@
   margin: 146px auto 180px;
   padding: 35px 25px 0px;
   display: flex;
-  gap: 25px;
+  gap: 65px;
+  width: 100%;
 }
 
 .about__column:first-child {
-  width: calc(100% / 3 - 2 * 25px);
+  width: calc((100% - 100px - 65px) / 3);
   display: flex;
-  justify-content: center;
+  padding-left: 47px;
 }
 
 .about__column:last-child {
-  width: calc(100% / 3 * 2 - 2 * 25px);
+  width: calc((100% - 100px - 65px) / 3 * 2);
+  flex-grow: 1;
 }
 
 .about__logo {
@@ -270,16 +272,20 @@
   height: 240px;
   border-radius: 50%;
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 63px 45px;
 }
 
 .about__title {
-  height: 240px;
+  height: 248px;
   font-weight: 700;
   font-size: 40px;
-  line-height: 47px;
+  line-height: 46.96px;
   color: #000;
   display: flex;
-  align-items: center;
+  padding-top: 103px;
   text-transform: uppercase;
 }
 
@@ -290,19 +296,19 @@
   font-weight: 400px;
   font-size: 20px;
   line-height: 24px;
-  letter-spacing: calc(20px * 0.01);
+  letter-spacing: 0;
 }
 
 .about__text_normal {
   letter-spacing: normal;
 }
 
-.about__text_wide {
-  letter-spacing: calc(20px * 0.02);
+.about__text_little-wide {
+  letter-spacing: calc(20px * 0.01);
 }
 
-.about__text_narrow {
-  letter-spacing: calc(20px * -0.01);
+.about__text_wide {
+  letter-spacing: calc(20px * 0.02);
 }
 
 .about__text_wider {
@@ -311,6 +317,10 @@
 
 .about__text_widest {
   letter-spacing: calc(20px * 0.04);
+}
+
+.about__text_narrow {
+  letter-spacing: calc(20px * -0.01);
 }
 
 .footer {
