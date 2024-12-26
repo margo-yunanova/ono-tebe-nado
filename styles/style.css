@@ -31,9 +31,15 @@
   list-style: circle;
 }
 
-.header__logo {
+.header__logo-link {
+  display: block;
   width: 148px;
   height: 105px;
+}
+
+.header__logo {
+  width: 100%;
+  height: 100%;
 }
 
 .header__logo-image {
